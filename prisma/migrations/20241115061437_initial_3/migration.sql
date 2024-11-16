@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Questions" ALTER COLUMN "index" SET DATA TYPE DECIMAL(65,30);

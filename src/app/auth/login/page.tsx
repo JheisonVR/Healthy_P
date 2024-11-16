@@ -1,14 +1,16 @@
 import Link from "next/link";
+import { FaHome } from "react-icons/fa";
 
 export default function Page() {
     return (
      
             
             <div className="flex flex-col items-center justify-center h-screen">
+                <div className="absolute left-4 top-5"> <Link href={'/'}><FaHome/></Link> </div>
                 <div className="w-full max-w-md bg-violet-50 rounded-lg shadow-md p-6">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">Login</h2>
-                    <form className="flex flex-col">
-                        <input type="email" className="bg-white text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-blue-100 transition ease-in-out duration-150" placeholder="Email address"/>
+                    <form className="flex flex-col" autoComplete="off">
+                        <input type="email" className="bg-white text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-blue-100 transition ease-in-out duration-150" placeholder="Email address" />
                             <input type="password" className="bg-white text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="Password"/>
                                 <div className="flex items-center justify-between flex-wrap">
                                     <label htmlFor="remember-me" className="text-sm text-gray-900 cursor-pointer">

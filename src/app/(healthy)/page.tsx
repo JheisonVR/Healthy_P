@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MobileDownload } from "../components";
 // import { FaGooglePlay } from "react-icons/fa";
 // import { FaApple } from "react-icons/fa6";
 // import Link from "next/link"
@@ -9,7 +10,7 @@ export default function Home(){
       <main className=" flex flex-col md:flex-row w-full h-screen justify-between items-center  ">
         <div className="flex flex-col w-4/5 md:w-2/5 mx-1 ml-9 ">
           <div className="my-2">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl  xl:text-8xl">Experience a fresh way to</h2>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl  xl:text-8xl text-black">Experience a fresh way to</h2>
             <h2 className="text-4xl md:text-5xl lg:text-6xl text-violet-600">
               follow up your emotions
             </h2>
@@ -46,13 +47,14 @@ export default function Home(){
             </div>
 
             <div className="flex justify-center mt-2">
+              <MobileDownload/>
               
-              <button className="cursor-pointer group relative flex gap-1.5 px-8 py-4 bg-black bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md">
+              {/* <button className="cursor-pointer group relative flex gap-1.5 px-8 py-4 bg-black bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md">
                 <svg 
                 // xmlns="http://www.w3.org/2000/svg" 
                 fill="none" viewBox="0 0 24 24" height="24px" width="24px"><g strokeWidth="0" id="SVGRepo_bgCarrier"></g><g strokeLinejoin="round" strokeLinecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Download"> <path strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector"></path> </g> </g></svg>
                 Download
-              </button>
+              </button> */}
               {/* <Link href="#">
                 <button className="flex flex-col justify-center items-center my-1 mx-1 p-2 bg-black text-white rounded-xl">
                   <FaApple size={15} />
@@ -62,6 +64,7 @@ export default function Home(){
                 <p>Download on</p> <FaGooglePlay size={15} />
               </button> */}
             </div>
+
           </div>
         </div>
 
