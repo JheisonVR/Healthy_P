@@ -5,7 +5,7 @@ import Link from "next/link"
 export const TopBar = () => {
 
   return (
-    <nav className="flex px-5 justify-between items-center w-full bg-violet-200 h-9 rounded-sm ">
+    <nav className="flex px-5 justify-between items-center w-full bg-violet-200 h-9 rounded-sm text-black ">
         {/* Logo */}
         <div className="flex">
             <Link href='/' className="flex justify-center items-center "> 
@@ -19,7 +19,7 @@ export const TopBar = () => {
               <span className="font-bold text-indigo-600"> | P</span>
              </Link>
         </div>
-        <div className=" hidden sm:block" >
+        <div className=" flex" >
           <Link className="m-2 p-2 rounded-md font-semibold transition-all hover:bg-gray-100" href='/survey/daily'>Survey</Link>
           <Link className="m-2 p-2 rounded-md font-semibold transition-all hover:bg-gray-100" href='/daily-survey'>Calendar</Link>
         </div>
