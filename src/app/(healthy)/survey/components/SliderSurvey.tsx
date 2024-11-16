@@ -31,7 +31,7 @@ export const SliderSurvey = () => {
 
 
     return (
-        <section className="py-2">
+        <section className="w-screen py-2">
             <div className="container">
                 <Swiper
                     navigation

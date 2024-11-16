@@ -12,7 +12,7 @@ interface Props {
   setEmotion: (key:string, value:string)=> void;
 }
 
-export const RadioCard = ({ data, emotions, setEmotion }: Props) => {
+export const RadioCard = ({ data, setEmotion }: Props) => {
 
     const handleInputCHange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const {id, value} = event.target
@@ -21,7 +21,7 @@ export const RadioCard = ({ data, emotions, setEmotion }: Props) => {
 
 
   return (
-    <div className=  {`w-[300px] sm:w-[500px] h-auto p-3 aspect-square rounded-lg shadow items-center justify-center gap-2 bg-violet-100 ${emotions.emotion === 'Happy' && (data.index===5.1 || data.index===5.2 || data.index===5.3) ? "hidden" : "flex flex-col"} text-black`} >
+    <div className=  {`w-[300px] sm:w-[500px] h-auto p-3 aspect-square rounded-lg shadow items-center justify-center gap-2 bg-violet-100 text-black`} >
             <p className="font-semibold self-start text-lg">
               {data.description}
             </p>

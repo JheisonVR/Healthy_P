@@ -1,6 +1,6 @@
 export default function Page() {
     return (
-        <div className="flex flex-wrap my-2 gap-5 justify-center items-center h-screen" >
+        <div className="flex flex-wrap my-2 gap-5 justify-center items-center px-2" >
             {/* Happy */}
             <div
                 className="relative overflow-hidden w-96 h-96 rounded-3xl cursor-pointer text-2xl font-bold bg-amber-500"

@@ -7,7 +7,7 @@ import { MobileDownload } from "../components";
 
 export default function Home(){
     return (
-      <main className=" flex flex-col md:flex-row w-full h-screen justify-between items-center  ">
+      <main className=" flex flex-col md:flex-row w-full justify-between items-center  ">
         <div className="flex flex-col w-4/5 md:w-2/5 mx-1 ml-9 ">
           <div className="my-2">
             <h2 className="text-5xl md:text-6xl lg:text-7xl  xl:text-8xl text-black">Experience a fresh way to</h2>

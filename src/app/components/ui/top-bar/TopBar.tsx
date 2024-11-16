@@ -5,7 +5,7 @@ import Link from "next/link"
 export const TopBar = () => {
 
   return (
-    <nav className="flex px-5 justify-between items-center w-full bg-violet-200 h-9 rounded-sm text-black ">
+    <nav className="flex px-5 justify-around sm:justify-between items-center w-full bg-violet-200 h-9 rounded-sm text-black ">
         {/* Logo */}
         <div className="flex">
             <Link href='/' className="flex justify-center items-center "> 
@@ -15,13 +15,13 @@ export const TopBar = () => {
                 height={80}
                 alt="logo_Healthy_P"
               ></Image>
-              <span className="antialiased font-bold">Healthy</span>
-              <span className="font-bold text-indigo-600"> | P</span>
+              <span className="hidden sm:block antialiased font-bold">Healthy</span>
+              <span className="hidden sm:block font-bold text-indigo-600"> | P</span>
              </Link>
         </div>
         <div className=" flex" >
           <Link className="m-2 p-2 rounded-md font-semibold transition-all hover:bg-gray-100" href='/survey/daily'>Survey</Link>
-          <Link className="m-2 p-2 rounded-md font-semibold transition-all hover:bg-gray-100" href='/daily-survey'>Calendar</Link>
+          {/* <Link className="m-2 p-2 rounded-md font-semibold transition-all hover:bg-gray-100" href='/daily-survey'>Calendar</Link> */}
         </div>
         <div className="flex items-center" >
           {/* <Link href='#' className="mx-2">
